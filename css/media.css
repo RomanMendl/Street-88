@@ -40,11 +40,15 @@
     }
 
     .nav__burger:focus ~ .menu {
-        display: flex;
+        /* display: flex; */
+        visibility: visible;
     }
 
     .menu {
-        display: none;
+        /* display: none; */
+        transition-property: visibility;
+        transition-delay: 0.2s;
+        visibility: hidden;
         position: absolute;
         top: 100%;
         right: 0;
@@ -84,6 +88,7 @@
 
     .card__title {
         grid-column: span 1;
+        margin-top: 15px;
     }
 
     .card__box {
@@ -186,6 +191,7 @@
 
     .card__title {
         grid-column: span 1;
+        margin-top: 15px;
     }
 
     .card__box {
